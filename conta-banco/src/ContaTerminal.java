@@ -2,9 +2,6 @@ import java.util.Scanner;
 
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
-        //TODO: conhecer e importar a classe Scanner
-        //Exibir as mensagens para o nosso usario 
-        //Exibir a mensagem da conta criada
 
         Scanner resposta = new Scanner(System.in);
 
@@ -20,12 +17,14 @@ public class ContaTerminal {
         System.out.println("Digite o saldo");
         double saldoInicial = 0.00D;
 
-        System.out.println("Olá "+ nomeCliente 
-        +", obrigado por criar uma conta em nosso banco," +"\n"
-        +" sua agência é : " + agencia +"\n"
-        +" Conta: " + numero +"\n"
-        +" Saldo Inicial: " + saldoInicial );
-
+        System.out.printf("Olá %s,\n", nomeCliente );
+        System.out.printf(" obrigado por criar uma conta em nosso banco,\n");
+        System.out.printf(" sua agência é %S,\n", agencia);
+        System.out.printf(" conta %d  \n", numero);
+        System.out.printf(" e seu saldo: " + saldoInicial);
+        System.out.printf(" já está disponível");
+        System.out.printf(" \n");
+   
         resposta.close();    
     }
 }
